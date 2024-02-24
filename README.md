@@ -22,7 +22,7 @@ Simple api to study Falcon Web Framework.
 
 1. Execute o seguinte comando para iniciar o serviço com Docker Compose:
     ```
-    docker-compose up
+    sudo docker compose up
     ```
 
 Para informações sobre como os dados do CSV foram gerados, consulte o relatório técnico.
