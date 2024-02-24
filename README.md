@@ -17,7 +17,20 @@ Simple api to study Falcon Web Framework.
     ```
 2. Execute o arquivo `run.py`.
 
-3. Inicialize a rede neural chamando o endpoint POST http://localhost:8000/init-neural-net com o seguinte corpo (body) em formato JSON:
+
+#### Com Docker:
+
+1. Execute o seguinte comando para iniciar o serviço com Docker Compose:
+    ```
+    docker-compose up
+    ```
+
+Para informações sobre como os dados do CSV foram gerados, consulte o relatório técnico.
+
+
+#### Usando rede neural
+
+1. Inicialize a rede neural chamando o endpoint POST http://localhost:8000/init-neural-net com o seguinte corpo (body) em formato JSON:
     ```json
     {
         "input_size": 4,
@@ -29,13 +42,4 @@ Simple api to study Falcon Web Framework.
     }
     ```
 
-4. Treine os dados do CSV contido nos arquivos da API chamando o endpoint PATCH http://localhost:8000/train.
-
-#### Com Docker:
-
-1. Execute o seguinte comando para iniciar o serviço com Docker Compose:
-    ```
-    docker-compose up
-    ```
-
-Para informações sobre como os dados do CSV foram gerados, consulte o relatório técnico.
+2. Treine os dados do CSV contido nos arquivos da API chamando o endpoint PATCH http://localhost:8000/train.
